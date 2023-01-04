@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./styles/menu.css">
+</head>
+<style>
+    table{
+        text-align: center;
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 10px ;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">Blogs</a>
+                    <ul class="dropdown">
+                        <li><a href="">Blog 1</a></li>
+                        <li><a href="">Blog 2</a></li>
+                        <li>
+                            <a href="">Blog 3</a>
+                            <ul class="dropdown">
+                                <li><a href="">Blog 1</a></li>
+                                <li><a href="">Blog 2</a></li>
+                                <li><a href="">Blog 3</a></li>
+                                <li><a href="">Blog 4</a></li>
+                                <li><a href="">Blog 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Blog 4</a></li>
+                        <li><a href="">Blog 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="">Gallery 1</a></li>
+                        <li><a href="">Gallery 2</a></li>
+                        <li><a href="">Gallery 3</a></li>
+                        <li><a href="">Gallery 4</a></li>
+                        <li><a href="">Gallery 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="salary-sheet">
+            <h2>Salary Sheet</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Full Name</th>
+                        <th>Company</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bill Gates</td>
+                        <td>Microsoft</td>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Stev Jobs</td>
+                        <td>Apple</td>
+                        <td>$1200</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry Page</td>
+                        <td>Google</td>
+                        <td>$1300</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mark Zuckerberg</td>
+                        <td>Facebook</td>
+                        <td>$1300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="pitha-ghor">
+            <form action="">
+                <h1>Welcome To Jamal Er Ma Pitha Ghor</h1>
+                <label for="fixed value">fixed value read only
+                    <input type="text" value="fill up the form carefully" readonly>
+                </label>
+                <label for="name">Your Name : 
+                    <input type="text" name="" id="name" placeholder="Your Name">
+                </label>
+                <label for="email">Your Email: 
+                    <input type="email" id="email" name="" placeholder="Your Email">
+                </label>
+                <label for="mobile">Your Mobile: 
+                    <input type="number" id="mobile" name="" placeholder="Your Phone Number">
+                </label>
+                <label for="delivery">Delivery Address: <input  type="text" placeholder="Coming Soon" name="" id="delivery" disabled></label>
+                <fieldset>
+                    <legend>Pic One Pitha</legend>
+                        <label for="chitoy">
+                            <input type="radio" id="chitoy" name=""> Chitoy
+                        </label>
+                        <label for="vapa">
+                            <input type="radio" name="" id="vapa">Vapa
+                        </label>
+                        <label for="cocunat">
+                            <input type="radio" name="" id="cocunat">Cocunat
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Select One Or More Vorta</legend>
+                        <label for="sorisa">
+                            <input type="checkbox" name="" id="sorisa"> Sorisa
+                        </label>
+                        <label for="shutki">
+                            <input type="checkbox" name="" id="shutki"> Shutki
+                        </label>
+                        <label for="dal">
+                            <input type="checkbox" name="" id="dal"> Dal
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </fieldset>
+                    <input type="reset" value="Clear All">
+                    <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <div class="blogs">
+            <div class="blog">
+                <h3>first blog</h3>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?</p>
+                </article>
+            </div>  
+        </div>
+
+        <div class="blogs">
+            <div class="blog">
+                <h3>first blog</h3>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?</p>
+                </article>
+            </div>  
+        </div>
+
+        <div class="blogs">
+            <div class="blog">
+                <h3>first blog</h3>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, est aliquam harum eaque minima nesciunt atque doloremque sunt. Rerum consequatur perspiciatis a velit, recusandae ab sequi quam nesciunt ut aspernatur?</p>
+                </article>
+            </div>  
+        </div>
+    </main>
+
+    <footer>
+       
+        <small title="this is small title">Copyright by rakib-molla </small>
+    </footer>
+</body>
+</html>
